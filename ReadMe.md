@@ -175,6 +175,27 @@ Users can click ***simulate*** after the above steps and wait for the final resu
 
 
 
+## Authors
+
+- **Haocheng (Evans) Zhu**
+  
+    **Email**: evanszhu2001@gmail.com
+
+- **Dr. Ulrik R. Beierholm**
+  
+    **Email**: beierh@gmail.com
+
+- **Dr. Ladan Shams**
+  
+    **Email**: ladan@psych.ucla.edu
+
+
+If you have any inquiries or feedback, please don't hesitate to contact us. We will get back to you as soon as possible.
+
+---
+
+
+
 
 
 
