@@ -150,6 +150,7 @@ See ‘***Fitting module***’ 4.
 ***Display value***: Showing the value of the peak and mean of probability on the figure.
 
 **6. Simulate**
+
 Users can click ***simulate*** after the above steps and wait for the final results. 
 
 
