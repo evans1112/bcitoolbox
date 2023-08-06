@@ -34,7 +34,7 @@ The BCI Toolbox provides a Graphical User Interface (GUI) for easy interaction w
 import bcitoolbox as btb
 ```
 
-2.  Call the GUI:
+2.  Open the GUI:
 ```python
 btb.gui()
 ```
