@@ -18,9 +18,9 @@ Please check if the latest version is installed from [bcitoolbox](https://pypi.o
 
 The BCI model is based on Bayes’ Rule as follows:
 
-$P(C|xU, xD) = \frac{P(C) P(xU, xD|C)}{P(xU, xD)}$
+$P(C|x1, x2) = \frac{P(C) P(x1, x2|C)}{P(x1, x2)}$
 
-where xU and xD are two signals received by the nervous system, and C is a binary variable denoting the number of causes in the environment, 1 or 2.
+where x1 and x2 are two signals received by the nervous system, and C is a binary variable denoting the number of causes in the environment, 1 (common cause) or 2 (independent causes).
 
 
 # BCI Toolbox: Basic Usage
