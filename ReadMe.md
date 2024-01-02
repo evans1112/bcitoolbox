@@ -1,10 +1,11 @@
 # BCI Toolbox: Bayesian Causal Inference Toolbox
 
-![Version](https://img.shields.io/badge/version-0.0.1.6-red)
+![Version](https://img.shields.io/badge/version-0.0.2.6-red)
 ![Language](https://img.shields.io/badge/language-Python-blue)
 
 BCI Toolbox is a Python implementation of the hierarchical Bayesian Causal Inference (BCI) model for multisensory research. The BCI model is a statistical framework for understanding the causal relationships between sensory inputs and prior expectations of a common cause, which can account for human perception in various tasks.
 
+For more details, please check the [documentation](https://bci-toolbox.readthedocs.io/). 
 ## Installation
 
 BCI Toolbox is available via pip. To install, run the following command:
@@ -39,16 +40,16 @@ import bcitoolbox as btb
 btb.gui()
 ```
 
-The current version GUI of the BCI toolbox consists of three main parts, which are ***Fitting module***, ***Simulation for continuous condition*** and ***Simulation for numerosity task***.
+The current version GUI of the BCI toolbox consists of 2 main sections, which are ***Model Fitting*** and ***Model Simulation*** 
 
-### ***Fitting module***
+### ***Model Fitting***
 **1. Import** / **Open file**
    
 Users can upload single or multiple files simultaneously via either ***Import*** or ***Open file***. Users can also add the file paths to the entry box and click ***Import*** to upload.
 
 The selected files containing behavioral data must be **.csv** files and need to be in the following format:
 
-| (True number of stimuli from modality U) | (True number of stimuli from modality D) | (Reported number of stimuli from modality U) | (Reported number of stimuli from modality D) |
+| (True number of stimuli from modality 1) | (True number of stimuli from modality 2) | (Reported number of stimuli from modality 1) | (Reported number of stimuli from modality 2) |
 |------------------------------|-----------------------------------------|--------------------------------------------|--------------------------------------------|
 | ...                          | ...                                     | ...                                        | ...                                        |
 
@@ -86,17 +87,17 @@ Users can set the target estimated parameters and set their ranges.
 
 ***pcommon***: The prior probability that both sensory information can be attributed to one cause.
 
-***sigmaU***: The standard deviation of the Gaussian distribution of the likelihood for modality Up.
+***sigma 1***: The standard deviation of the Gaussian distribution of the likelihood for modality 1.
 
-***sigmaD***: The standard deviation of the Gaussian distribution of the likelihood for modality Down.
+***sigma 2***: The standard deviation of the Gaussian distribution of the likelihood for modality 2.
 
 ***sigmap***: The standard deviation of the Gaussian distribution of the prior.
 
 ***mup***: The mean of the Gaussian distribution of the prior.
 
-***sU***: A constant added to the mean of the Gaussian distribution for the likelihood for modality Up.
+***s1***: A constant added to the mean of the Gaussian distribution for the likelihood for modality 1.
 
-***sD***: A constant added to the mean of the Gaussian distribution for the likelihood for modality Down.
+***s2***: A constant added to the mean of the Gaussian distribution for the likelihood for modality 2.
 
 **6. Run**
 
@@ -117,17 +118,17 @@ Users can click ***save*** to save all fitting figures to folder.
 Go back to the main page.
 
 
-### ***Simulation for continuous condition***
+### ***Model Simulation***
 
 **1. Parameters**
 
-See ‘***Fitting module***’ 5.
+See ‘***Model Fitting***’ 5.
 
 **2. Stimulus value**
 
-***Stimulus U***: The true value of the stimulus (modality Up).
+***Stimulus 1***: The true value of the stimulus (modality Up).
 
-***Stimulus D***: The true value of the stimulus (modality Down).
+***Stimulus 2***: The true value of the stimulus (modality Down).
 
 **3. Elements**
 
@@ -150,25 +151,6 @@ See ‘***Fitting module***’ 4.
 ***Display value***: Showing the value of the peak and mean of probability on the figure.
 
 **6. Simulate**
-
-Users can click ***simulate*** after the above steps and wait for the final results. 
-
-
-### ***Simulation for numerosity task***
-
-**1. Parameters**
-
-See ‘***Fitting module***’ 5.
-
-**2. Number of stimuli**
-
-Number of unisensory condition.
-
-**3. Decision Strategy**
-
-See ‘***Fitting module***’ 4.
-
-**4. Simulate**
 
 Users can click ***simulate*** after the above steps and wait for the final results. 
 
