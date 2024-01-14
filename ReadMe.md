@@ -1,6 +1,6 @@
 # BCI Toolbox: Bayesian Causal Inference Toolbox
 
-![Version](https://img.shields.io/badge/version-0.0.2.6-red)
+![Version](https://img.shields.io/badge/version-0.0.2.8-red)
 ![Language](https://img.shields.io/badge/language-Python-blue)
 
 BCI Toolbox is a Python implementation of the hierarchical Bayesian Causal Inference (BCI) model for multisensory research. The BCI model is a statistical framework for understanding the causal relationships between sensory inputs and prior expectations of a common cause, which can account for human perception in various tasks.
